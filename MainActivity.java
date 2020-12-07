@@ -156,10 +156,7 @@ public class MainActivity extends AppCompatActivity {
 
 // Instantiate the RequestQueue.
                                 RequestQueue queue = Volley.newRequestQueue(MainActivity.this);
-                                String url =weatherURL+"?q="+cityName+"&appid=c3a92e5fba334c9d3fb5c4bebe5b7c71";
-
-
-                                StringRequest stringRequest = new StringRequest(weatherURL + "?q=" + cityName + "&appid=c3a92e5fba334c9d3fb5c4bebe5b7c71", new Response.Listener<String>() {
+                                StringRequest stringRequest = new StringRequest(weatherURL + "?q=" + cityName, new Response.Listener<String>() {
                                     @SuppressLint("ResourceType")
                                     @Override
                                     public void onResponse(String response) {
